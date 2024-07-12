@@ -147,6 +147,153 @@
     display: none;
   }
 }
+.modal {
+  display: none;
+  max-width: 500px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: auto;
+  position: fixed;
+  inset: 0;
+  cursor: pointer;
+  padding: 14px;
+}
+
+.modal-cart__delivery {
+  background-color: #f0f4fc;
+  padding: 20px;
+  position: relative;
+  cursor: default;
+  margin: auto;
+}
+
+.modal__close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  background: #fff;
+  align-items: center;
+}
+
+.modal-cart__btns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.modal-cart__btn {
+  border-radius: 32px;
+  padding: 8px 24px;
+  font-weight: 600;
+}
+
+.modal-cart__btn:disabled {
+  opacity: 0.6;
+}
+
+.modal-cart__fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: grid;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.modal-cart__fieldset:last-child {
+  margin-bottom: 0;
+}
+
+.modal-cart__input {
+  border: none;
+  border-radius: 10px;
+  padding: 24px 0 24px 30px;
+  width: 422px;
+  background-color: #d7e2f6;
+  font-weight: 500;
+  font-size: 18px;
+  color: #1f4284;
+}
+
+.modal-cart__btns {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.modal-cart__btn {
+  border-radius: 4px;
+  padding: 18px 12px;
+  width: 452px;
+  border: 1px solid #244c98;
+  background-color: #f0f4fc;
+  font-weight: 500;
+  font-size: 18px;
+  color: #244c98;
+}
+
+.modal-cart__btn:hover {
+  cursor: pointer;
+}
+
+.modal-cart__btn_active {
+  border-radius: 4px;
+  padding: 18px 12px;
+  width: 452px;
+  border: none;
+  background-color: #244c98;
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+}
+
+.restore {
+  font-weight: 500;
+  font-size: 20px;
+  color: #244c98;
+  cursor: pointer;
+}
+
+label {
+  position: relative;
+  color: #323232;
+}
+
+input[type=checkbox] {
+  appearance: none;
+  background: #fff;
+  border: 2px solid #415674;
+  height: 1.5em;
+  width: 1.5em;
+  margin: 0 10px 0 0px;
+  vertical-align: text-bottom;
+  position: relative;
+}
+
+input::before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  top: 0;
+}
+
+input:checked::before {
+  border-right: 5px solid #4b83fc;
+  border-bottom: 6px solid #4b83fc;
+  height: 90%;
+  width: 30%;
+  transform: rotate(50deg) translateY(-20%) translateX(-10%);
+}
+
 * {
   margin: 0;
   padding: 0;

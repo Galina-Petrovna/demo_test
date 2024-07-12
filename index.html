@@ -6,6 +6,7 @@
   <title>Document</title>
 
   <link rel="stylesheet" href="./style/style.css">
+  <script src="./script.js" type="module"></script>
 </head>
 <body>
 
@@ -13,17 +14,14 @@
     <div class="container">
       <div class="hero">
         <div class="text">
-            <p class="text__header">Демо-версия</p>
-
-            <p class="text__p">За&nbsp;18&nbsp;лет деятельности было реализовано более 500&nbsp;крупных, а&nbsp;так&nbsp;же, не&nbsp;менее 2500 средних и&nbsp;малых проектов. Используя знания и&nbsp;накопленный опыт мы&nbsp;можем предложить</p>
-
-            
-            <button class="button">Попробовать бесплатно
-              <div class="arrow">
-                <img class="arrow__img" src="./image/arrow-up-right.svg" alt="стрелка">
-              </div>
-            </button>
-
+          <p class="text__header">Демо-версия</p>
+          <p class="text__p">За&nbsp;18&nbsp;лет деятельности было реализовано более 500&nbsp;крупных, а&nbsp;так&nbsp;же, не&nbsp;менее 2500 средних и&nbsp;малых проектов. Используя знания и&nbsp;накопленный опыт мы&nbsp;можем предложить</p>
+          
+          <button class="button">Попробовать бесплатно
+            <div class="arrow">
+              <img class="arrow__img" src="./image/arrow-up-right.svg" alt="стрелка">
+            </div>
+          </button>
         </div>
 
         <div class="image">
@@ -34,6 +32,35 @@
       </div>
     </div>
   </main>
-  
+
+  <div class="modal">
+    <div class="modal-cart__delivery">
+
+      <h2>Войти в систему</h2>
+
+      <form class="modal-cart__form" id="cart">
+        <fieldset class="modal-cart__fieldset modal-cart__fieldset_text">
+          <input class="modal-cart__input" type="text" placeholder="Email/Телефон" name="phone">
+          <input class="modal-cart__input" type="password" id="pass" placeholder="Пароль" name="password" minlength="8"/>
+          <label>
+            <input type="checkbox" value="choice">Запомнить пароль
+          </label>
+          <p class="restore">Восстановить</p>
+        </fieldset>
+
+          <div class="modal-cart__btns">
+            <button class="modal-cart__btn modal-cart__btn_active" type="button">Войти</button>
+            <button class="modal-cart__btn" type="submit" form="cart">Зарегестрироваться</button>
+          </div>
+
+        <button class="modal__close">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 6L6 18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M6 6L18 18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
